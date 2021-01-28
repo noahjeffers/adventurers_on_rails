@@ -11,6 +11,15 @@
   </head>
 
   <body>
+      <header>
+        Adventurer's on Rails
+      </header>
+      <nav>
+        <ul>
+          <li><%= link_to "Adventurers", adventurers_path %></li>
+          <li><%= link_to "Items", items_path %></li>
+        </ul>
+      </nav>
     <%= yield %>
   </body>
 </html>
