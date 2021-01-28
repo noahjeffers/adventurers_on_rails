@@ -1,5 +1,9 @@
 class AdventurersController < ApplicationController
-  def index; end
+  def index
+    @adventurers = Adventurer.all
+  end
 
-  def show; end
+  def show
+    @adventurer = Adventurer.find(params[:id])
+  end
 end
