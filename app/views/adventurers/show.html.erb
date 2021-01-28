@@ -1,5 +1,12 @@
 <h1><%= @adventurer.name %></h1>
 
 <p>
-<%= link_to 'Home', adventurers_path %>
+  <%= link_to 'Home', adventurers_path %>
 </p>
+
+
+<ul>
+  <% @adventurer.items.each do |item| %>
+    <li><%= link_to item.name, item  %></li>
+  <% end %>
+</ul>
